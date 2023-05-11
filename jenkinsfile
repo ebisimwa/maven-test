@@ -19,6 +19,7 @@ pipeline {
           withSonarQubeEnv('sonar') {
         sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=ebisimwa_geolocation1'
                }
+          
           }
         }
         stage('Code Build') {
@@ -49,4 +50,4 @@ pipeline {
         }  
     }
 }
-}
+
